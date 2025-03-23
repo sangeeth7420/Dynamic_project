@@ -1,29 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="html_css.css" rel="stylesheet">
-        <title>Dashboard</title>
-    </head>
-    <body>
-        <div class="dashboard_heading">
-            <h1>Welcome to Custom Dashbaord</h1>
-            <h2>It Doesn't have any functionalities yet! </h2>
-        </div>
-
-        <div class="dashboard_content">
-            
-        </div>
-
-        <div class="dashboard_footer">
-            <button onclick="window.location.href='html_css.html'" class="action-btn">
-                Return to Home
-            </button>
-        </div>
-
-        <div>
-
-        </div>
-    </body>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="custom_style.css">
+  <script src="html_css.js" defer></script>
+</head>
+<body class="dashboard_page">
+  <div class="dashboard_div">
+    <h1>Welcome to the Custom Dashboard!</h1>
+    <p>It doesn't have any functionalities yet!</p>
+  </div>
+  <div class="empty-box"></div>
+  <div class="btn_div">
+    <button class="ref_btn" onclick="goHome()">Click here to return to home</button>
+  </div>
+  <script>
+    function goHome() {
+      window.top.location.href = 'html_css.html';
+    }
+  </script>
+</body>
 </html>
