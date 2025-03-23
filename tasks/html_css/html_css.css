@@ -1,82 +1,168 @@
-/* General Styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Header Styles */
-.header_div {
-    background-color: #d3d3d3;
-    padding: 15px;
-    margin: 20px auto;
-    width: 70%;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/* Content Box */
-.content_div {
-    background-color: #d0f0f0;
-    padding: 15px;
-    margin: 20px auto;
-    width: 70%;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-}
-
-/* Button Styles */
-.btn_div {
-    text-align: center;
-}
-
-.ref_btn {
-    padding: 10px 20px;
-    margin-top: 20px;
-    font-size: 16px;
-    text-align: center;
-    background-color: rgb(244, 150, 180);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.ref_btn:hover {
-    background-color: rgb(255, 120, 150);
-}
-
-/* Dashboard Page Styles */
-body.dashboard_page {
-    background-color: #000;
-    color: rgb(137, 225, 226);
-}
-
-/* Dashboard Box */
-.dashboard_div {
-    background-color: #83657c;
-    color: white;
-    padding: 20px;
-    margin: 20px auto;
-    width: 60%;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 20px;
-}
-
-/* Empty Box */
-.empty-box {
-    background-color: #888;
-    height: 200px;
-    padding: 20px;
-    width: 60%;
-    margin: 30px auto;
-    margin-top: 20px;
-    border-radius: 10px;
+/* Light Theme (Home Page) */
+body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    color: #2d3748;
+    transition: all 0.3s ease;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.page-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #3182ce;
+    letter-spacing: -0.5px;
+}
+
+.content-box {
+    background-color: #ebf8ff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.7;
+    box-shadow: 0 4px 12px rgba(49, 130, 206, 0.1);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #3182ce;
+}
+
+.content-box p {
+    margin-bottom: 1rem;
+}
+
+.content-box p:last-child {
+    margin-bottom: 0;
+}
+
+.action-btn {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #3182ce;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(49, 130, 206, 0.2);
+}
+
+.action-btn:hover {
+    background-color: #2c5282;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(49, 130, 206, 0.3);
+}
+
+.action-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(49, 130, 206, 0.2);
+}
+
+/* Dark Theme (Dashboard Page) */
+.dark-theme {
+    background-color: #1a202c;
+    color: #e2e8f0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .page-title {
+    color: #63b3ed;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #a0aec0;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.dashboard-box {
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #2d3748;
+}
+
+.dashboard-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(99, 179, 237, 0.05) 0%,
+        rgba(99, 179, 237, 0) 80%
+    );
+    transform: rotate(30deg);
+}
+
+.dark-theme .action-btn {
+    background-color: #63b3ed;
+    color: #1a202c;
+    font-weight: 600;
+}
+
+.dark-theme .action-btn:hover {
+    background-color: #4299e1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    
+    .page-title {
+        font-size: 1.8rem;
+    }
+    
+    .dashboard-box {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 1.5rem;
+    }
+    
+    .content-box {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .action-btn {
+        width: 100%;
+    }
 }
