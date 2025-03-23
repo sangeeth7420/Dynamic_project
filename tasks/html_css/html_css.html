@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="html_css.css" rel="stylesheet">
-        <title>Homepage!</title>
-    </head>
-    <body>
-        <div class="header_div">
-            <h1>Welcome to my Custom Designed Page</h1>
-        </div> 
-
-        <div class="content_div">
-            Content Body Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Harum, asperiores distinctio tempore vero repudiandae nobis rerum autem accusamus rem ducimus nemo soluta blanditiis atque dicta quasi ipsam nostrum. 
-            Deleniti, nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, id eligendi nesciunt pariatur earum ducimus ullam fugiat cum dignissimos molestiae commodi veritatis quaerat harum expedita quisquam hic autem! Velit, voluptas.
-            Content Body Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Harum, asperiores distinctio tempore vero repudiandae nobis rerum autem accusamus rem ducimus nemo soluta blanditiis atque dicta quasi ipsam nostrum. 
-            Deleniti, nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, id eligendi nesciunt pariatur earum ducimus ullam fugiat cum dignissimos molestiae commodi veritatis quaerat harum expedita quisquam hic autem! Velit, voluptas.
-        </div>
-
-        <div class="footer_div">
-          <button onclick="window.location.href='dashboard.html'" class="action-btn">
-            Click here to see the Dashboard
+<html>
+<head>
+  <title>My Page</title>
+  <link rel="stylesheet" href="custom_style.css">
+  <script src="html_css.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div id="content_div">
+      <div class="header_div" id="header_div">
+        <h1>Welcome to My Custom Designed Page!</h1>
+      </div>
+      <div class="content_div">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+      </div>
+      <div class="btn_div" id="task-frame">
+        <button onclick="openPage('dashboard.html')" class="ref_btn">
+          Click here to see the dashboard
         </button>
-        </div>
-    </body>
+      </div>
+    </div>
+    <iframe id="page-frame" style="display:none; width:100%; height:600px; border:none;"></iframe>
+  </div>
+</body>
 </html>
