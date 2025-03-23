@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="calculator_js.js"></script>
+    <link rel="stylesheet" href="calculator_js.css">
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div id="container">
+            <div class="input_div">
+                <input class="input-val" placeholder="Enter the value of X" id="num1" />
+                <input class="input-val" placeholder="Enter the value of Y" id="num2" />
+                <input class="input-val" placeholder="Result will appear here" id="res" disabled />
+            </div>
+
+            <div class="click-buttons_div">
+                <button class="click-buttons" onclick="add()">Addition (X + Y)</button>
+                <button class="click-buttons" onclick="sub()">Subtraction (X - Y)</button>
+                <button class="click-buttons" onclick="mul()">Multiplication (X * Y)</button>
+                <button class="click-buttons" onclick="div()">Division (X / Y)</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

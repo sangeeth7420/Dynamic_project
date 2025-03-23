@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Lab - Dynamic Project Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app-wrapper">
+    <aside class="sidenav" id="sidenav">
+      <div class="sidenav-header">
+        <h2>Front-End Lab</h2>
+        <button class="menu-toggle" id="toggle-btn" onclick="toggleSidenav()"><img src="/icons/arrow.png" class="header-logo"></button>
+      </div>
+      <ul id="sidenav-items" class="sidenav-icons" data-icon-path="icons/">
+        <!-- Items will be loaded dynamically from JSON -->
+      </ul>
+    </aside>
+    <div class="right-section">
+      <header class="topbar">
+        <button class="menu-toggle global-toggle" id="global-toggle-btn" onclick="toggleSidenav()" style="display: none;">☰</button>
+        <h1 id="topbar-title">Home</h1>
+      </header>
+      <main class="main-content" id="main-content">
+        <div id="display-area">Welcome to the Frontend Lab. Select an item from the sidebar.</div>
+        <div id="dynamic-style"></div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <script src="student_mgmt.js"></script>
+    <link rel="stylesheet" href="student_mgmt.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h2 class="title">Student Information</h2>
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="number" id="age" placeholder="Enter Age"><br>
+            <input type="text" id="course" placeholder="Enter Course">
+            <input type="text" id="major" placeholder="Enter Major"><br>
+
+            <div class="button-container">
+                <button id="all-buttons" class="insert-btn" onclick="insertStudent()">Insert Info</button>
+                <button id="all-buttons" class="clear-btn" onclick="clearInputs()">Clear Inputs</button>
+                <button id="all-buttons" class="show-btn" onclick="showAllStudents()">Show All</button>
+                <button id="all-buttons" class="display-btn" onclick="clearDisplay()">Clear Display</button>
+            </div>
+
+            <h3 class="title">Search Student</h3>
+            <input type="text" id="searchInput" placeholder="Search by Name or Major" oninput="searchStudent()">
+
+            <h3 class="title">Student List</h3>
+            <div id="output"></div>
+        </div>
+    </div>
+</body>
+
+</html>

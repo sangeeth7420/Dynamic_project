@@ -1,0 +1,19 @@
+[
+  { "label": "Home", "file": "home.html", "icon": "home.png" },
+  { "label": "Basics - HTML & CSS", "file": "html_css.html", "icon": "html_css.png" },
+  { "label": "CSS Hover", "file": "css_hover.html", "icon": "css_hover.png" },
+  { "label": "Welcome to JS", "file": "welcome_js.html", "icon": "welcome_js.png" },
+  { "label": "Calculator with JS", "file": "calculator_js.html", "icon": "calculator_js.png" },
+  { "label": "String Operation", "file": "string_operation.html", "icon": "string_operation.png" },
+  { "label": "Conditionals", "file": "conditionals.html", "icon": "conditionals.png" },
+  { "label": "Call-Stack with Array", "file": "callstack_array.html", "icon": "callstack_array.png" },
+  { "label": "Pattern & Loop", "file": "pattern_loop.html", "icon": "pattern_loop.png" },
+  { "label": "Student Management", "file": "student_mgmt.html", "icon": "student_mgmt.png" },
+  { "label": "Random Number", "file": "random_number.html", "icon": "random_number.png" },
+  { "label": "Age Calculator", "file": "age_calculator.html", "icon": "age_calculator.png" },
+  { "label": "Bootstrap Form", "file": "bootstrap_form.html", "icon": "bootstrap_form.png" },
+  { "label": "Creative Sites", "file": "creative_sites.html", "icon": "creative_sites.png" },
+  { "label": "Bootstrap Billing", "file": "bootstrap_billing.html", "icon": "bootstrap_billing.png" },
+  { "label": "Objects", "file": "objects.html", "icon": "objects.png" },
+  { "label": "Ecommerce", "file": "ecommerce.html", "icon": "ecommerce.png" }
+]

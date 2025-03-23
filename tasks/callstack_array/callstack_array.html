@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Pipeline Manager</title>
+    
+    <script src="callstack_array.js"></script>
+    <link rel="stylesheet" href="callstack_array.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h3>Process Line</h3>
+            <input type="text" id="task_input" placeholder="Enter Task Name" />
+            <div class="buttons">
+                <button class="clk-buttons" onclick="addTask()">Add Task</button>
+                <button class="clk-buttons" onclick="undoTask()">Undo Task</button>
+            </div>
+            <div class="pipeline" id="task_pipeline">No tasks in pipeline</div>
+        </div>
+    </div>
+</body>
+
+</html>

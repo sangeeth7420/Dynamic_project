@@ -1,0 +1,32 @@
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.input-buttons {
+  padding: 10px;
+  font-size: 16px;
+  width: 180px;
+}
+
+#output {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.title {
+  color: #000000c2;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: white;
+}

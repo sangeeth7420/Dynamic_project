@@ -1,0 +1,55 @@
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  height: 300px;
+  text-align: center;
+  padding: 50px;
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+}
+
+input:focus {
+  border-color: #ff7e5f;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.clk-buttons {
+  background: #ff7e5f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.clk-buttons:hover {
+  background: #ea5c44;
+}
+
+.pipeline {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}

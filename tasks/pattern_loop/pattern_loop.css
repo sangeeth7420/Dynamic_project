@@ -1,0 +1,20 @@
+body {
+  font-family: Arial, sans-serif;
+}
+input {
+  padding: 5px;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+#demo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh; 
+  background-color: #f6f6f9;
+}

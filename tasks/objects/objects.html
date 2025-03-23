@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information UI</title>
+    <link rel="stylesheet" href="objects.css">
+    <script src="objects.js"></script>
+</head>
+
+<body class="main-sec">
+    <div class="wrapper">
+        <h2 class="title">Enter Your Information</h2>
+        <input type="text" id="fullName" placeholder="Enter Full Name">
+        <input type="text" id="location" placeholder="Enter location">
+        <input type="email" id="email" placeholder="Enter Email">
+        <input type="text" id="course" placeholder="Enter Course">
+        <br>
+        <button class="clk-btn" onclick="saveInfo()">Save Info</button>
+        <button class="clk-btn" onclick="displayInfo()">Show All Entries</button>
+        <div id="output"></div>
+    </div>
+</body>
+
+</html>

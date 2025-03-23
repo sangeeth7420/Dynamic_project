@@ -1,0 +1,23 @@
+input {
+  padding: 10px;
+  width: 250px;
+  font-size: 25px;
+  border: 2px solid #33333326;
+  border-radius: 5px;
+  outline: none;
+}
+
+.click-button {
+  padding: 10px 20px;
+  font-size: 25px;
+  background-color: #5078a4c4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.click-button:hover {
+  background-color: #0056b3;
+}

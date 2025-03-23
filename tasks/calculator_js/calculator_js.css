@@ -1,0 +1,15 @@
+.input-val {
+  width: 300px;
+  font-size: 20px;
+}
+.click-buttons {
+  width: 230px;
+  font-size: 20px;
+}
+.click-buttons_div{
+  margin-top: 10px;
+}
+#container{
+  padding: 10px;
+  margin: 10px;
+}
