@@ -1,63 +1,125 @@
-.header_div{
-  background-color: #d3d3d3;
-  padding: 15px;
-  margin: 20px auto;
-  width: 70%;
-  text-align: center;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: bold;
-
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.content_div{
-  background-color: #d0f0f0;
-  padding: 15px;
-  margin: 20px auto;
-  width: 70%;
-  text-align: center;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-}
-.btn_div{
-  text-align: center;
-}
-.ref_btn{
-  padding: 10px 20px;
-  margin-top: 20px;
-  font-size: 16px;
-  text-align: center;
-  background-color: rgb(244, 150, 180);
-
-  
-
-}
-body.dashboard_page{
-  background-color: #000;
-  color: rgb(137, 225, 226);
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
 }
 
-.dashboard_div {
-  background-color: #83657c;
-  color: white;
-  padding: 20px;
-  margin: 20px auto;
-  width: 60%;
-  text-align: center;
-  border-radius: 10px;
-  font-size: 20px;
+/* ===== HEADER SECTION ===== */
+.header_div, .dashboard_heading {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  width: 85%;
+  max-width: 1200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #2563eb;
 }
 
-.empty-box {
-  background-color: #888;
+.header_div h1, .dashboard_heading h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e293b;
+  text-align: left;
+}
+
+.dashboard_heading h2 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #64748b;
+  font-weight: 400;
+  text-align: left;
+}
+
+/* ===== CONTENT SECTION ===== */
+.content_div, .dashboard_content {
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 85%;
+  max-width: 1200px;
+  font-size: 1rem;
+  line-height: 1.7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  color: #475569;
+}
+
+/* Dashboard content styling */
+.dashboard_content {
+  background-color: #f1f5f9;
   height: 200px;
-  padding: 20px;
-  width:60% ;
-  margin: 30px auto;
-  margin-top: 20px;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.1rem;
+  color: #64748b;
+  border: 1px dashed #cbd5e1;
+}
+
+/* ===== FOOTER SECTION ===== */
+.footer_div, .dashboard_footer {
+  margin: 2rem auto;
+  width: 85%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* ===== BUTTON STYLING ===== */
+button {
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+}
+
+button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Remove focus outlines */
+*:focus {
+  outline: none;
+}
+
+/* Link styling */
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header_div, .dashboard_heading, 
+  .content_div, .dashboard_content,
+  .footer_div, .dashboard_footer {
+    width: 92%;
+    padding: 1.5rem;
+  }
   
+  .header_div h1, .dashboard_heading h1 {
+    font-size: 1.5rem;
+  }
 }
